@@ -1,6 +1,6 @@
-##部署数据库
-###一、安装docker
-####1、指定yum源
+## 部署数据库
+### 一、安装docker
+#### 1、指定yum源
 ```shell script
 wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.cloud.tencent.com/repo/centos7_base.repo
 ```
