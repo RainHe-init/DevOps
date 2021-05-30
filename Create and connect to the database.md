@@ -55,3 +55,27 @@ CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS   
 e34902413f55   postgres:9.6   "docker-entrypoint.s…"   8 seconds ago   Up 7 seconds   0.0.0.0:5432->5432/tcp, :::5432->5432/tcp   postgres-server
 ```
 #### 5、用Navicat连接测试
+```shell script
+账号:postgres
+密码:POSTGRES_PASSWORD的*********
+```
+
+### 三、使用docker安装mongodb
+#### 1、下载
+```shell script
+docker pull mongo:4.0
+```
+#### 2、创建持久卷
+```shell script
+docker volume create mongodb-data 
+```
+#### 3、启动容器
+```shell script
+docker run -d  --name mongodb-server -v mongodb-data:/data/db -e "MONGO_INITDB_ROOT_USERNAME=root" -e "MONGO_INITDB_ROOT_PASSWORD=********"  -p 27017:27017 mongo:4.0 --auth
+```
+#### 4、查看容器运行状态
+```shell script
+docker ps -a
+CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                                           NAMES
+f126017d0a8d   mongo:4.0      "docker-entrypoint.s…"   17 minutes ago   Up 17 minutes   0.0.0.0:27017->27017/tcp, :::27017->27017/tcp   mongodb-server
+```
