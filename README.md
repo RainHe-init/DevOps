@@ -35,6 +35,9 @@ harbor:
 gitlab的root用户:
     用户名:root
     密码:ZH....88
+gitlab的普通用户:
+    用户名:liuxiang
+    密码:ZH...88
 harbor的root用户:
     用户名:admin
     密码:Harbor12345
