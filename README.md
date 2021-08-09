@@ -31,6 +31,8 @@ jenkins:
     172.16.120.44:8880
 harbor:
     172.16.120.44:80  harbor.liuxing.com
+rancher:
+    http://172.16.120.66
 ```
 ## 4、内部用户和密码
 ```shell script
@@ -44,6 +46,9 @@ harbor的root用户:
     用户名:admin
     密码:Harbor12345
 Jenkins的root用户:
+    用户名:admin
+    密码:123
+rancher:
     用户名:admin
     密码:123
 ```
