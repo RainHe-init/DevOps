@@ -14,6 +14,10 @@
 4核cpu，4G内存，20G硬盘，不拆分
 #### 81.70.88.52 postgresql,mongodb
 1核cpu，2G内存，50G硬盘，1M带宽，云上数据库
+#### 172.16.120.77 k8s-master-binary
+6核cpu，8G内存，50G硬盘，不拆分
+#### 172.16.120.88 k8s-node-binary
+6核cpu，8G内存，50G硬盘，不拆分
 
 ## 2、域名解析
 ```shell script
